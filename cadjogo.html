@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de jogos</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="salvar_jogos.jsp">
+            <p>
+                <label for="codigo">Código*:</label>
+                <input id="codigo" type="text" name="codigo" size="5">
+            </p>
+            <p>
+                <label for="nome">Nome*:</label>
+                <input id="nome" type="text" name="nome" size="50" maxlength="50">
+            </p>
+            <p>
+                <label for="categoria">Categoria:</label>
+                <input id="categoria" type="text" name="categoria" size="20" maxlength="20">
+            </p>
+            
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+        </form>
+
+    </body>
+</html>
