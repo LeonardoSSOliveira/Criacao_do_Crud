@@ -22,7 +22,7 @@
             try {
                 
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/jogos", "root", "root"); 
+                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/jogos", " ", " "); // Colocar o nome do banco de dados e senha entre as áspas " " 
                
                 sql = "SELECT * FROM games WHERE codigo= ?";
                 st = conexao.prepareStatement(sql);
