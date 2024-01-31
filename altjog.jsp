@@ -22,7 +22,7 @@
             try {
                 //Conectar ao banco de dados
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/jogos", "root", "root"); 
+                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/jogos", " ", " "); // Colocar nome do banco de dados e senha entre as áspas " " 
                 
                 sql = "UPDATE games SET nome = ?, categoria = ? WHERE codigo =?";
                 st = conexao.prepareStatement(sql);
